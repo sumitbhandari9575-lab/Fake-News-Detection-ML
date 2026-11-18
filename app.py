@@ -8,9 +8,9 @@ nltk.download("stopwords")
 stop_words = stopwords.words("english")
 
 # Load saved model
-model = pickle.load(open("fake_news_model.pkl", "rb"))
-vectorizer = pickle.load(open("tfidf_vectorizer.pkl", "rb"))
-
+import joblib
+model = joblib.load("fake_news_model.pkl")
+vectorizer = joblib.load("tfidf_vectorizer.pkl")
 # Text cleaning function
 def clean_text(text):
     text = text.lower()
