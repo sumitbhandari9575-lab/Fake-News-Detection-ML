@@ -1,0 +1,7 @@
+ipykernel #ipykernel is the essential Python execution backend (kernel) for Jupyter
+pandas
+scikit-learn
+nltk
+streamlit
+altair==4.0
+standard-imghdr
